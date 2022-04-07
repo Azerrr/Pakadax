@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pakadax</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <style>
+        .sheet {
+            width: fit-content;
+            overflow: auto;
+            box-shadow: 2px 2px 8px 2px rgba(0, 0, 25, 0.4);
+            padding: 15px;
+            border-radius: 15px;
+            background-color: #F7ECDE;
+        }
+
+        .column {
+            float: left;
+            width: fit-content;
+            margin: 10px;
+            max-width: 500px;
+        }
+
+        .firstColumn {
+            max-width: 320px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        td {
+            padding-right: 5px;
+        }
+    </style>
+    <script async="false" src="../data/pokemons.js" type="module"></script>
+    <script async=false src="../scripts/fillContent.js" type="module"></script>
+</head>
+
+<body>
+    <a href="../index.html">← List</a>
+    <br />
+    <div class="sheet">
+        <div class="column firstColumn">
+
+            <h1>{{Name}}</h1>
+            <audio id="audio">
+                {{CrySrc}}
+            </audio>
+            {{ImageSrc}}
+
+            <h2>Base Stats</h2>
+            <table>
+                <tr>
+                    <td><b>HP</b>:</td>
+                    <td>{{HP}}</td>
+                </tr>
+                <tr>
+                    <td><b>Attack</b>:</td>
+                    <td>{{Attack}}</td>
+                </tr>
+                <tr>
+                    <td><b>Defense</b>:</td>
+                    <td>{{Defense}}</td>
+                </tr>
+                <tr>
+                    <td><b>Special Attack</b>:</td>
+                    <td>{{SpecialAttack}}</td>
+                </tr>
+                <tr>
+                    <td><b>Special Defense</b>:</td>
+                    <td>{{SpecialDefense}}</td>
+                </tr>
+                <tr>
+                    <td><b>Speed</b>:</td>
+                    <td>{{Speed}}</td>
+                </tr>
+            </table>
+
+            <h2>Basic Information</h2>
+            <p><b>Type</b>: {{Type}}</p>
+
+            <h3>Abilities</h3>
+            {{Abilities}}
+
+            <h2>Evolutions</h2>
+            <p><b>Pre-evolution</b>: {{Preevolutions}}</p>
+            <p><b>Evolution</b>: {{Evolutions}}</p>
+
+            <h2>Size</h2>
+            <p><b>Height</b>: {{Height}} m</p>
+            <p><b>Weight</b>: {{Weight}} kg</p>
+
+            <h2>Breeding</h2>
+            <p><b>Gender ratio</b>: {{MRatio}} ♂ / {{FRatio}} ♀</p>
+            <p><b>Egg group(s)</b>: {{EggGroup}}</p>
+            <p><b>Hatch rate</b>: {{HatchRate}} steps</p>
+
+            <h2>Living</h2>
+            <p><b>Diet</b>: {{Diet}}</p>
+            <p><b>Habitat</b>: {{Habitat}}</p>
+        </div>
+
+        <div class="column">
+            <h2>Capabilities</h2>
+            <p>{{Capabilities}}</p>
+
+            <h2>Skills</h2>
+            <p>{{Skills}}</p>
+
+            <h2>Moves</h2>
+
+            <h3>Level Up Moves</h3>
+            {{Moves}}
+
+            <h3>TM Moves</h3>
+            <p>{{TmMoves}}</p>
+
+            <h3>Egg Moves</h3>
+            <p>{{EggMoves}}</p>
+
+            <h3>Tutor Moves</h3>
+            <p>{{TutorMoves}}</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

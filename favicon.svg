@@ -1,0 +1,19 @@
+<svg width="64" height="64"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <text 
+        x="5" 
+        y="60" 
+        font-size="72" 
+        font-family="fantasy" 
+        textLength="54" 
+        lengthAdjust="spacingAndGlyphs" 
+        stroke="black" 
+        stroke-width="5"
+        fill="red" 
+    >
+        A
+    </text>
+
+</svg>

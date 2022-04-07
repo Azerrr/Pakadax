@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pakadax</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <style>
+        table {
+            width: fit-content;
+            overflow: auto;
+            box-shadow: 2px 2px 8px 2px rgba(0, 0, 25, 0.4);
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #F7ECDE;
+        }
+        td {
+            padding: 0;
+        }
+    </style>
+    <script async="false" src="./data/pokemons.js" type="module"></script>
+    <script async=false src="./scripts/fillContent.js" type="module"></script>
+</head>
+
+<body>
+    {{PokemonsTable}}
+</body>
+
+</html>
